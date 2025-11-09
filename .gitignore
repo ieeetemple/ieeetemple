@@ -4,3 +4,4 @@
 # But keep the .gitignore file itself
 !.gitignore
 !LICENSE
+!private/index.html

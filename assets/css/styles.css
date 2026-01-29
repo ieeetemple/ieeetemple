@@ -1188,12 +1188,17 @@ footer .credit {
 .carousel-slide {
     min-width: 100%;
     position: relative;
+    height: 800px;
+    background: var(--charcoal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-slide img {
     width: 100%;
-    height: 500px;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     display: block;
 }
 
@@ -1777,7 +1782,8 @@ footer .credit {
 
     .carousel-slide img,
     .carousel-placeholder {
-        height: 350px;
+        height: 100%;
+        object-fit: contain;
     }
 
     .carousel-slide-content {

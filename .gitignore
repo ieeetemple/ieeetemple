@@ -1,4 +1,6 @@
-# But keep the .gitignore file itself
+# Ignore everything
+*
+
+# Allow README
+!README.md
 !.gitignore
-!LICENSE
-!index.html

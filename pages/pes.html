@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="IEEE Power & Energy Society at Temple University - Advancing electric power and energy science for the betterment of society.">
+    <title>PES - Power & Energy Society | Temple IEEE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <style>
+        .pes-hero {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(0, 98, 155, 0.2) 0%, transparent 40%),
+                radial-gradient(circle at 70% 70%, rgba(249, 115, 22, 0.15) 0%, transparent 40%),
+                var(--charcoal);
+        }
+        
+        .pes-badge {
+            background: rgba(0, 98, 155, 0.15);
+            border-color: rgba(0, 98, 155, 0.3);
+            color: #38BDF8;
+        }
+        
+        .pes-highlight {
+            background: linear-gradient(135deg, #00629B 0%, #F97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .pes-btn {
+            background: linear-gradient(135deg, #00629B 0%, #0088D4 100%);
+        }
+        
+        .pes-btn:hover {
+            box-shadow: 0 15px 40px rgba(0, 98, 155, 0.4);
+        }
+        
+        .pes-stats {
+            background: linear-gradient(135deg, #00629B 0%, #F97316 100%);
+        }
+        
+        .pes-tag {
+            color: #00629B;
+        }
+        
+        .pes-mission-icon {
+            background: linear-gradient(135deg, #00629B 0%, #F97316 100%);
+        }
+        
+        .pes-card:hover {
+            border-color: #00629B;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo">Temple <span>IEEE</span></a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="nav-dropdown">
+                <a href="#">Initiatives <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="../pages/ohmies.html">Ohmies</a>
+                    <a href="../pages/biztech.html">BizTech</a>
+                </div>
+            </li>
+            <li><a href="../pages/board.html">Board</a></li>
+            <li><a href="../pages/events.html">Events</a></li>
+            <li class="nav-dropdown">
+                <a href="#">Branches <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="../pages/embs.html">EMBS</a>
+                    <a href="../pages/pes.html" class="active">PES</a>
+                    <a href="../pages/wie.html">WIE</a>
+                </div>
+            </li>
+        </ul>
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <section class="hero pes-hero" style="min-height: 80vh;">
+        <div class="hero-grid"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge pes-badge">IEEE Power & Energy Society</div>
+            <h1>Power & <span class="pes-highlight">Energy Society</span></h1>
+            <p class="hero-subtitle">Advancing electric power generation, transmission, distribution, and energy conversion. Empowering the future of sustainable energy and smart grid technologies.</p>
+            <div class="hero-buttons">
+                <a href="https://teams.microsoft.com" target="_blank" class="btn pes-btn">
+                    <i class="fas fa-users"></i>
+                    Join PES
+                </a>
+                <a href="events.html" class="btn btn-secondary">
+                    <i class="fas fa-calendar"></i>
+                    View Events
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light">
+        <div class="section-header">
+            <span class="section-tag pes-tag">About Us</span>
+            <h2 class="section-title">Powering the Future</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.1rem; color: var(--warm-gray); line-height: 1.8; margin-bottom: 1.5rem;">IEEE Power & Energy Society (PES) is the premier global provider of scientific and engineering information on electric power and energy, with approximately 40,000 members worldwide. PES sets the standard for engagement, education, and development in the power and energy industry.</p>
+            <p style="font-size: 1.1rem; color: var(--warm-gray); line-height: 1.8;">At Temple University, our PES chapter focuses on electric power systems, smart grid technologies, renewable energy, and the transition to sustainable power infrastructure. We explore everything from power generation and transmission to energy markets and policy.</p>
+        </div>
+    </section>
+
+    <section class="stats-section pes-stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>40K+</h3>
+                <p>Members Worldwide</p>
+            </div>
+            <div class="stat-item">
+                <h3>Global</h3>
+                <p>Chapters & Sections</p>
+            </div>
+            <div class="stat-item">
+                <h3>50%</h3>
+                <p>of IEEE Standards</p>
+            </div>
+            <div class="stat-item">
+                <h3>6+</h3>
+                <p>Transactions Journals</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-dark">
+        <div class="section-header">
+            <span class="section-tag pes-tag">Focus Areas</span>
+            <h2 class="section-title">What We Explore</h2>
+        </div>
+
+        <div class="card-grid" style="max-width: 1200px;">
+            <div class="card-dark pes-card" style="text-align: center;">
+                <div class="pes-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Power Generation & Transmission</h3>
+                <p>Electric power generation, high-voltage transmission, grid infrastructure, and power system analysis and protection.</p>
+            </div>
+
+            <div class="card-dark pes-card" style="text-align: center;">
+                <div class="pes-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Smart Grid & Electrification</h3>
+                <p>Smart grid technologies, grid modernization, demand response, microgrids, and the future of electrification.</p>
+            </div>
+
+            <div class="card-dark pes-card" style="text-align: center;">
+                <div class="pes-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-solar-panel"></i>
+                </div>
+                <h3>Sustainable Energy</h3>
+                <p>Renewable energy integration, energy storage, wind and solar power, and the transition to clean energy systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-dark" style="padding-top: 0;">
+        <div class="section-header">
+            <span class="section-tag pes-tag">Our Activities</span>
+            <h2 class="section-title">What We Do</h2>
+        </div>
+
+        <div class="card-grid" style="max-width: 1200px;">
+            <div class="card-dark pes-card" style="text-align: center;">
+                <div class="pes-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3>Standards Development</h3>
+                <p>Participate in developing IEEE standards that shape the global power and energy industry. Nearly half of all IEEE standards come from PES.</p>
+            </div>
+
+            <div class="card-dark pes-card" style="text-align: center;">
+                <div class="pes-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>Education & Webinars</h3>
+                <p>Technical workshops, "Plain Talk" webinars, tutorials on power systems, energy markets, and policy regulation.</p>
+            </div>
+
+            <div class="card-dark pes-card" style="text-align: center;">
+                <div class="pes-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Conferences & Mentorship</h3>
+                <p>Attend PES General Meeting, Grid Edge, and T&D conferences. Connect with industry mentors through our workforce initiative.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light" style="text-align: center;">
+        <div style="max-width: 600px; margin: 0 auto;">
+            <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--charcoal); margin-bottom: 1rem;">Join PES</h2>
+            <p style="color: var(--warm-gray); margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.7;">Whether you are interested in power systems, renewable energy, smart grid technology, or shaping the future of the energy industry, PES welcomes you.</p>
+            <a href="https://teams.microsoft.com" target="_blank" class="btn pes-btn">
+                <i class="fas fa-heart"></i>
+                Get Involved
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>2025 Temple University IEEE Student Branch</p>
+        <p class="credit">Made by Santiago T.</p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

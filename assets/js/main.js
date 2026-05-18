@@ -5,6 +5,7 @@
 // Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
+    initDropdowns();
     initAnimations();
     initFilterTabs();
     initCarousel();
@@ -81,8 +82,58 @@ function initNavigation() {
 }
 
 /* =====================================================
-   Scroll Animations
-   ===================================================== */
+    Dropdown Navigation
+    ===================================================== */
+function initDropdowns() {
+    const dropdowns = document.querySelectorAll('.nav-dropdown');
+    
+    if (dropdowns.length === 0) return;
+    
+    dropdowns.forEach(function(dropdown) {
+        const trigger = dropdown.querySelector(':scope > a');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        
+        if (!trigger || !menu) return;
+        
+        // Mobile: toggle on click
+        trigger.addEventListener('click', function(e) {
+            if (window.innerWidth <= 992) {
+                e.preventDefault();
+                dropdown.classList.toggle('open');
+            }
+        });
+        
+        // Close dropdown when clicking a menu item
+        menu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                dropdown.classList.remove('open');
+                // Also close mobile nav
+                const navLinks = document.querySelector('.nav-links');
+                if (navLinks) {
+                    navLinks.classList.remove('active');
+                    const icon = document.querySelector('.mobile-toggle i');
+                    if (icon) {
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+        });
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        dropdowns.forEach(function(dropdown) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('open');
+            }
+        });
+    });
+}
+
+/* =====================================================
+    Scroll Animations
+    ===================================================== */
 function initAnimations() {
     // Intersection Observer for fade-in animations
     const observerOptions = {

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="IEEE Engineering in Medicine and Biology Society at Temple University - Advancing the application of engineering to medicine and biology.">
+    <title>EMBS - Engineering in Medicine & Biology | Temple IEEE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <style>
+        .embs-hero {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(13, 148, 136, 0.2) 0%, transparent 40%),
+                radial-gradient(circle at 70% 70%, rgba(6, 182, 212, 0.15) 0%, transparent 40%),
+                var(--charcoal);
+        }
+        
+        .embs-badge {
+            background: rgba(13, 148, 136, 0.15);
+            border-color: rgba(13, 148, 136, 0.3);
+            color: #2DD4BF;
+        }
+        
+        .embs-highlight {
+            background: linear-gradient(135deg, #0D9488 0%, #06B6D4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .embs-btn {
+            background: linear-gradient(135deg, #0D9488 0%, #14B8A6 100%);
+        }
+        
+        .embs-btn:hover {
+            box-shadow: 0 15px 40px rgba(13, 148, 136, 0.4);
+        }
+        
+        .embs-stats {
+            background: linear-gradient(135deg, #0D9488 0%, #06B6D4 100%);
+        }
+        
+        .embs-tag {
+            color: #0D9488;
+        }
+        
+        .embs-mission-icon {
+            background: linear-gradient(135deg, #0D9488 0%, #06B6D4 100%);
+        }
+        
+        .embs-card:hover {
+            border-color: #0D9488;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo">Temple <span>IEEE</span></a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="nav-dropdown">
+                <a href="#">Initiatives <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="../pages/ohmies.html">Ohmies</a>
+                    <a href="../pages/biztech.html">BizTech</a>
+                </div>
+            </li>
+            <li><a href="../pages/board.html">Board</a></li>
+            <li><a href="../pages/events.html">Events</a></li>
+            <li class="nav-dropdown">
+                <a href="#">Branches <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                <div class="dropdown-menu">
+                    <a href="../pages/embs.html" class="active">EMBS</a>
+                    <a href="../pages/pes.html">PES</a>
+                    <a href="../pages/wie.html">WIE</a>
+                </div>
+            </li>
+        </ul>
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <section class="hero embs-hero" style="min-height: 80vh;">
+        <div class="hero-grid"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge embs-badge">IEEE Engineering in Medicine & Biology</div>
+            <h1>Engineering in <span class="embs-highlight">Medicine & Biology</span></h1>
+            <p class="hero-subtitle">Advancing the application of engineering sciences and technology to medicine and biology. Bridging the gap between engineering innovation and healthcare solutions.</p>
+            <div class="hero-buttons">
+                <a href="https://teams.microsoft.com" target="_blank" class="btn embs-btn">
+                    <i class="fas fa-users"></i>
+                    Join EMBS
+                </a>
+                <a href="events.html" class="btn btn-secondary">
+                    <i class="fas fa-calendar"></i>
+                    View Events
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light">
+        <div class="section-header">
+            <span class="section-tag embs-tag">About Us</span>
+            <h2 class="section-title">Where Engineering Meets Healthcare</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.1rem; color: var(--warm-gray); line-height: 1.8; margin-bottom: 1.5rem;">IEEE Engineering in Medicine and Biology Society (EMBS) is one of the largest technical societies within IEEE, with over 13,000 members in 97+ countries. EMBS advances the application of engineering sciences and technology to medicine and biology, promoting the profession and providing global leadership for the benefit of its members and humanity.</p>
+            <p style="font-size: 1.1rem; color: var(--warm-gray); line-height: 1.8;">At Temple University, our EMBS chapter brings together students interested in biomedical engineering, healthcare technology, and the intersection of engineering with life sciences. We explore diagnostic systems, therapeutic technologies, bioinformatics, robotics, and AI in healthcare.</p>
+        </div>
+    </section>
+
+    <section class="stats-section embs-stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>13K+</h3>
+                <p>Members Worldwide</p>
+            </div>
+            <div class="stat-item">
+                <h3>97+</h3>
+                <p>Countries Represented</p>
+            </div>
+            <div class="stat-item">
+                <h3>98+</h3>
+                <p>EMBS Chapters</p>
+            </div>
+            <div class="stat-item">
+                <h3>11</h3>
+                <p>Technical Journals</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-dark">
+        <div class="section-header">
+            <span class="section-tag embs-tag">Focus Areas</span>
+            <h2 class="section-title">What We Explore</h2>
+        </div>
+
+        <div class="card-grid" style="max-width: 1200px;">
+            <div class="card-dark embs-card" style="text-align: center;">
+                <div class="embs-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Diagnostic Systems</h3>
+                <p>Medical imaging, biosensors, signal processing, and AI-powered diagnostics for early disease detection and monitoring.</p>
+            </div>
+
+            <div class="card-dark embs-card" style="text-align: center;">
+                <div class="embs-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-procedures"></i>
+                </div>
+                <h3>Therapeutic Systems</h3>
+                <p>Robot-assisted surgery, drug delivery systems, neural engineering, and rehabilitation technologies.</p>
+            </div>
+
+            <div class="card-dark embs-card" style="text-align: center;">
+                <div class="embs-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-dna"></i>
+                </div>
+                <h3>Healthcare & Bioinformatics</h3>
+                <p>Computational biology, genomics, health informatics, and data science applications in medicine.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-dark" style="padding-top: 0;">
+        <div class="section-header">
+            <span class="section-tag embs-tag">Our Activities</span>
+            <h2 class="section-title">What We Do</h2>
+        </div>
+
+        <div class="card-grid" style="max-width: 1200px;">
+            <div class="card-dark embs-card" style="text-align: center;">
+                <div class="embs-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <h3>Research & Innovation</h3>
+                <p>Hands-on projects exploring biomedical devices, wearable health tech, and computational models for healthcare.</p>
+            </div>
+
+            <div class="card-dark embs-card" style="text-align: center;">
+                <div class="embs-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>Workshops & Tutorials</h3>
+                <p>Technical workshops on medical imaging, biosignal processing, machine learning in healthcare, and more.</p>
+            </div>
+
+            <div class="card-dark embs-card" style="text-align: center;">
+                <div class="embs-mission-icon" style="width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-size: 1.75rem; color: white;">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Conferences & Networking</h3>
+                <p>Attend EMBC, BioRob, and regional conferences. Connect with industry professionals and researchers in biomedical engineering.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-light" style="text-align: center;">
+        <div style="max-width: 600px; margin: 0 auto;">
+            <h2 style="font-family: 'Syne', sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--charcoal); margin-bottom: 1rem;">Join EMBS</h2>
+            <p style="color: var(--warm-gray); margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.7;">Whether you are passionate about biomedical engineering, healthcare technology, or exploring the intersection of engineering and medicine, EMBS welcomes you.</p>
+            <a href="https://teams.microsoft.com" target="_blank" class="btn embs-btn">
+                <i class="fas fa-heart"></i>
+                Get Involved
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>2025 Temple University IEEE Student Branch</p>
+        <p class="credit">Made by Santiago T.</p>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

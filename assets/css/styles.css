@@ -1016,233 +1016,6 @@ footer .credit {
 }
 
 /* =====================================================
-   Ohmies Page Specific
-   ===================================================== */
-.steps-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.step-card {
-    text-align: center;
-    padding: 2.5rem;
-    background: white;
-    border-radius: 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-}
-
-.step-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
-
-.step-number {
-    width: 50px;
-    height: 50px;
-    background: var(--gradient-cherry);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Syne', sans-serif;
-    font-weight: 800;
-    font-size: 1.25rem;
-    margin: 0 auto 1.5rem;
-}
-
-.step-card h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--charcoal);
-}
-
-.step-card p {
-    color: var(--warm-gray);
-    line-height: 1.7;
-}
-
-/* Ohmie Cards */
-.ohmie-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(250, 248, 245, 0.1);
-    border-radius: 24px;
-    padding: 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.ohmie-card:hover {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: var(--temple-cherry);
-    transform: translateY(-5px);
-}
-
-.ohmie-avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: var(--gradient-cherry);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-    font-size: 2.5rem;
-    color: white;
-}
-
-.ohmie-card h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.35rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.ohmie-info {
-    font-size: 0.9rem;
-    color: rgba(250, 248, 245, 0.6);
-    margin-bottom: 0.25rem;
-}
-
-.ohmie-concentration {
-    color: var(--temple-cherry);
-    font-weight: 600;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-}
-
-.ohmie-fact {
-    font-size: 0.9rem;
-    color: rgba(250, 248, 245, 0.5);
-    font-style: italic;
-}
-
-/* =====================================================
-   BizTech Page Specific
-   ===================================================== */
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.benefit-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(250, 248, 245, 0.1);
-    border-radius: 24px;
-    padding: 2.5rem;
-    transition: all 0.3s ease;
-}
-
-.benefit-card:hover {
-    background: rgba(255, 255, 255, 0.06);
-    transform: translateY(-5px);
-}
-
-.benefit-card:nth-child(1) { border-top: 3px solid var(--temple-cherry); }
-.benefit-card:nth-child(2) { border-top: 3px solid var(--ieee-blue); }
-.benefit-card:nth-child(3) { border-top: 3px solid var(--accent-gold); }
-
-.benefit-icon {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.benefit-card:nth-child(1) .benefit-icon { color: var(--temple-cherry); }
-.benefit-card:nth-child(2) .benefit-icon { color: var(--ieee-blue); }
-.benefit-card:nth-child(3) .benefit-icon { color: var(--accent-gold); }
-
-.benefit-card h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--cream);
-}
-
-.benefit-card ul {
-    list-style: none;
-}
-
-.benefit-card li {
-    color: rgba(250, 248, 245, 0.7);
-    margin-bottom: 0.75rem;
-    padding-left: 1.5rem;
-    position: relative;
-    line-height: 1.6;
-}
-
-.benefit-card li::before {
-    content: '\f00c';
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    position: absolute;
-    left: 0;
-    color: var(--ieee-blue);
-}
-
-/* CTA Section */
-.cta-section {
-    padding: 6rem 4rem;
-    background: var(--gradient-cherry);
-    text-align: center;
-}
-
-.cta-section h2 {
-    font-family: 'Syne', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: white;
-    margin-bottom: 1rem;
-}
-
-.cta-section p {
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.cta-buttons .btn {
-    background: white;
-    color: var(--temple-cherry);
-}
-
-.cta-buttons .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-}
-
-.cta-buttons .btn-outline {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-}
-
-.cta-buttons .btn-outline:hover {
-    background: white;
-    color: var(--temple-cherry);
-}
-
-/* =====================================================
    Event Carousel
    ===================================================== */
 .carousel-section {
@@ -1919,14 +1692,6 @@ footer .credit {
         grid-template-columns: 1fr;
     }
 
-    .steps-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .benefits-grid {
-        grid-template-columns: 1fr;
-    }
-
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1954,10 +1719,6 @@ footer .credit {
     .filter-header {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-    .cta-section {
-        padding: 4rem 2rem;
     }
 
     footer {
@@ -2101,10 +1862,7 @@ footer .credit {
     .card:hover,
     .card-dark:hover,
     .board-card:hover,
-    .event-card:hover,
-    .benefit-card:hover,
-    .step-card:hover,
-    .ohmie-card:hover {
+    .event-card:hover {
         transform: none;
     }
 

@@ -171,7 +171,7 @@ function initAnimations() {
     }, observerOptions);
 
     // Apply to cards, board cards, event cards
-    const animatedCards = document.querySelectorAll('.card, .board-card, .event-card, .step-card, .benefit-card, .card-dark, .ohmie-card');
+    const animatedCards = document.querySelectorAll('.card, .board-card, .event-card, .card-dark');
     
     animatedCards.forEach(function(card, index) {
         card.style.opacity = '0';
